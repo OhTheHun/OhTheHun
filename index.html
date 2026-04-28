@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Web Developer</title>
+    <meta name="description" content="Portfolio chuyên nghiệp của một Web Developer đam mê sáng tạo và công nghệ mới.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="logo">DEV.PORTFOLIO</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#certs">Chứng chỉ</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Sáng Tạo <span style="color: var(--primary)">Trải Nghiệm</span> Kỹ Thuật Số</h1>
+            <p>Tôi là một Web Developer chuyên nghiệp, tập trung vào việc tạo ra các ứng dụng web hiện đại, hiệu năng
+                cao và có tính thẩm mỹ cao.</p>
+            <a href="#projects" class="btn btn-primary">Xem dự án của tôi</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">Về <span>Tôi</span></h2>
+        <div class="glass" style="padding: 3rem; max-width: 900px; margin: 0 auto;">
+            <p style="font-size: 1.1rem; text-align: center;">
+                Với hơn 2 năm kinh nghiệm trong lĩnh vực phát triển web, tôi không chỉ viết code mà còn xây dựng những
+                giải pháp thực tế.
+                Tôi yêu thích việc học hỏi các công nghệ mới như Next.js, React và tối ưu hóa trải nghiệm người dùng qua
+                các hiệu ứng animations mượt mà.
+            </p>
+            <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap;">
+                <div style="text-align: center;"><i class="fab fa-react" style="font-size: 2rem; color: #61DBFB;"></i>
+                    <p>React</p>
+                </div>
+                <div style="text-align: center;"><i class="fab fa-js" style="font-size: 2rem; color: #F7DF1E;"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div style="text-align: center;"><i class="fab fa-node-js" style="font-size: 2rem; color: #68A063;"></i>
+                    <p>Node.js</p>
+                </div>
+                <div style="text-align: center;"><i class="fab fa-css3-alt"
+                        style="font-size: 2rem; color: #264de4;"></i>
+                    <p>CSS3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title"><span>Dự án</span> Tiêu Biểu</h2>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <a href="https://github.com/yourusername/library-system" target="_blank" class="glass project-card">
+                <div class="project-info">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--primary); text-align: center;">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h3>Hệ Thống Quản Lý Thư Viện</h3>
+                    <p>Ứng dụng quản lý sách, độc giả và mượn trả với giao diện hiện đại và tính năng thống kê chi tiết.</p>
+                    <div style="margin-top: 1rem;">
+                        <span style="font-size: 0.8rem; background: var(--glass-border); padding: 4px 10px; border-radius: 10px; margin-right: 5px;">React</span>
+                        <span style="font-size: 0.8rem; background: var(--glass-border); padding: 4px 10px; border-radius: 10px;">Node.js</span>
+                    </div>
+                </div>
+            </a>
+            <!-- Project 2 -->
+            <a href="https://github.com/yourusername/ecommerce-dashboard" target="_blank" class="glass project-card">
+                <div class="project-info">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--secondary); text-align: center;">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>E-Commerce Dashboard</h3>
+                    <p>Trang quản trị cho cửa hàng trực tuyến, tích hợp biểu đồ doanh thu và quản lý đơn hàng thời gian thực.</p>
+                    <div style="margin-top: 1rem;">
+                        <span style="font-size: 0.8rem; background: var(--glass-border); padding: 4px 10px; border-radius: 10px; margin-right: 5px;">Next.js</span>
+                        <span style="font-size: 0.8rem; background: var(--glass-border); padding: 4px 10px; border-radius: 10px;">Tailwind</span>
+                    </div>
+                </div>
+            </a>
+            <!-- Project 3 -->
+            <a href="https://github.com/yourusername/social-media-app" target="_blank" class="glass project-card">
+                <div class="project-info">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--primary); text-align: center;">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>Ứng Dụng Social Media</h3>
+                    <p>Nền tảng kết nối cộng đồng với các tính năng chia sẻ bài viết, bình luận và thông báo tức thời.</p>
+                    <div style="margin-top: 1rem;">
+                        <span style="font-size: 0.8rem; background: var(--glass-border); padding: 4px 10px; border-radius: 10px; margin-right: 5px;">Firebase</span>
+                        <span style="font-size: 0.8rem; background: var(--glass-border); padding: 4px 10px; border-radius: 10px;">React Native</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="certs">
+        <h2 class="section-title">Chứng Chỉ & <span>Thành Tựu</span></h2>
+        <div class="cert-grid">
+            <a href="https://coursera.org/verify/..." target="_blank" class="glass cert-card">
+                <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--primary);">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h4>Full Stack Web Development</h4>
+                <p style="color: var(--text-dim); font-size: 0.9rem;">Coursera - 2023</p>
+                <p style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--primary);">Xem chứng chỉ <i class="fas fa-external-link-alt"></i></p>
+            </a>
+            <a href="https://google.com/grow/..." target="_blank" class="glass cert-card">
+                <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--secondary);">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h4>Advanced React Patterns</h4>
+                <p style="color: var(--text-dim); font-size: 0.9rem;">Google / Udemy - 2024</p>
+                <p style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--secondary);">Xem chứng chỉ <i class="fas fa-external-link-alt"></i></p>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Kết Nối Với <span>Tôi</span></h2>
+        <div class="contact-container">
+            <a href="https://facebook.com" class="glass social-link" title="Facebook"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="https://github.com" class="glass social-link" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" class="glass social-link" title="LinkedIn"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:email@example.com" class="glass social-link" title="Email"><i
+                    class="fas fa-envelope"></i></a>
+            <a href="tel:+84123456789" class="glass social-link" title="Phone"><i class="fas fa-phone"></i></a>
+        </div>
+        <p style="text-align: center; margin-top: 3rem; color: var(--text-dim);">
+            Sẵn sàng cho các cơ hội hợp tác mới! Hãy liên hệ với tôi qua bất kỳ kênh nào ở trên.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Portfolio. Thiết kế bởi Thái Toàn.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
