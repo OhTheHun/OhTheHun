@@ -1,40 +1,40 @@
-# 🚀 Modern Web Developer Portfolio
+# 👋 Chào mọi người, mình là Thái Toàn!
 
-Chào mừng bạn đến với repo Portfolio của tôi! Đây là một trang web giới thiệu bản thân được thiết kế theo phong cách hiện đại, sử dụng kỹ thuật **Glassmorphism** và các hiệu ứng chuyển động mượt mà.
+Chào mừng bạn đã ghé thăm "căn nhà nhỏ" của mình trên GitHub! Đây là nơi mình trưng bày những dự án tâm huyết và hành trình phát triển bản thân với nghề Web Developer.
 
-## 🌟 Tính năng nổi bật
-- **Thiết kế Premium:** Sử dụng hệ màu tối (Dark mode) với hiệu ứng mesh gradient thuần CSS.
-- **Glassmorphism UI:** Hiệu ứng kính mờ cho các card dự án và chứng chỉ, tạo cảm giác sang trọng.
-- **Dynamic Links:** Các dự án và chứng chỉ được liên kết trực tiếp tới GitHub, Google và Coursera.
-- **Responsive Design:** Tối ưu hóa trên mọi thiết bị từ desktop đến mobile.
-- **Hiệu ứng mượt mà:** Sử dụng Intersection Observer API để tạo hiệu ứng scroll reveal.
+Trang Portfolio này được thiết kế dựa trên phong cách tối giản, hiện đại (cảm hứng từ mẫu Saad Pasta) nhưng vẫn đậm chất riêng của mình.
 
-## 🛠️ Công nghệ sử dụng
-- **HTML5 & CSS3:** Cấu trúc và giao diện hiện đại không phụ thuộc vào hình ảnh tĩnh.
-- **JavaScript (ES6+):** Xử lý hiệu ứng cuộn và tương tác người dùng.
-- **FontAwesome:** Bộ icon chuyên nghiệp cho các liên kết và dự án.
+## ✨ Có gì đặc biệt ở đây?
+- **Phong cách tối giản:** Giao diện sáng sủa, tập trung vào nội dung với tông màu tím chủ đạo tạo cảm giác chuyên nghiệp nhưng vẫn gần gũi.
+- **Sử dụng Bootstrap 5:** Toàn bộ layout được dựng bằng Bootstrap 5, đảm bảo hiển thị cực mượt trên cả điện thoại, máy tính bảng hay laptop.
+- **Hiệu ứng sinh động:** Hình ảnh minh họa (illustration) chuyển động nhẹ nhàng giúp trang web bớt đơn điệu.
+- **Cấu trúc rõ ràng:** Từ kỹ năng, dự án tiêu biểu đến các chứng chỉ đạt được, mọi thứ đều được sắp xếp logic để bạn dễ dàng theo dõi.
 
-## 📂 Cấu trúc thư mục
-```text
-├── index.html          # Trang chủ chính
-├── style.css           # File định nghĩa giao diện
-├── script.js           # File xử lý logic & animation
-└── README.md           # Hướng dẫn dự án
-```
+## 🛠️ "Vũ khí" mình sử dụng
+- **Bootstrap 5:** Để trang web luôn đẹp bất chấp thiết bị nào.
+- **Google Fonts & FontAwesome:** Tạo nên nét chữ hiện đại và bộ icon đồng nhất.
+- **HTML5 & CSS3:** Tùy biến sâu những chi tiết nhỏ nhất.
+- **JavaScript (ES6):** Xử lý các tương tác nhỏ cho trải nghiệm người dùng tốt hơn.
 
-## 🚀 Hướng dẫn triển khai lên GitHub Pages
-1. Fork hoặc clone repo này về máy của bạn.
-2. Tùy chỉnh thông tin cá nhân trong file `index.html`.
-3. Đẩy code lên GitHub repository của bạn.
-4. Truy cập vào **Settings** -> **Pages**.
-5. Chọn nhánh `main` và folder `/ (root)`, sau đó nhấn **Save**.
-6. Trang web của bạn sẽ được hiển thị tại: `https://<your-username>.github.io/<repo-name>/`
+## 📂 Bên trong bộ code này
+- `index.html`: "Trái tim" của trang web, nơi chứa mọi nội dung giới thiệu.
+- `style.css`: Nơi mình chăm chút cho màu sắc, font chữ và các hiệu ứng.
+- `assets/`: Chứa những tấm hình minh họa dễ thương.
+- `script.js`: Xử lý những logic ẩn bên dưới.
 
-## 📧 Liên hệ
+## 🚀 Bạn muốn sở hữu một trang giống thế này?
+Dễ ợt luôn! Bạn chỉ cần:
+1. **Fork** hoặc **Clone** cái repo này về máy.
+2. Mở file `index.html` lên, thay tên mình bằng tên bạn, sửa lại mấy cái link social cho đúng "chính chủ".
+3. Đẩy lên GitHub của bạn và bật tính năng **GitHub Pages** trong phần Settings là xong!
+
+## 📫 Kết nối với mình nhé!
+Nếu bạn thấy hứng thú với những gì mình làm, đừng ngần ngại nhắn tin cho mình qua:
 - **Facebook:** [Link của bạn]
-- **LinkedIn:** [Link của bạn]
 - **Email:** [Email của bạn]
-- **GitHub:** [Link của bạn]
+- **LinkedIn:** [Link của bạn]
+
+Hy vọng bạn sẽ thích trang Portfolio này! Đừng quên tặng mình một ⭐ nếu bạn thấy nó hữu ích nhé!
 
 ---
-*Dự án được tạo bởi Antigravity AI - Trợ lý lập trình thông minh.*
+*Dự án được hoàn thiện với sự hỗ trợ từ Antigravity AI.*

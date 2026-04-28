@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Web Developer</title>
-    <meta name="description" content="Portfolio chuyên nghiệp của một Web Developer đam mê sáng tạo và công nghệ mới.">
+    <title>Thái Toàn | Full Stack Developer</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -15,146 +18,162 @@
 
 <body>
 
-    <header id="header">
-        <div class="logo">DEV.PORTFOLIO</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Trang chủ</a></li>
-                <li><a href="#about">Giới thiệu</a></li>
-                <li><a href="#projects">Dự án</a></li>
-                <li><a href="#certs">Chứng chỉ</a></li>
-                <li><a href="#contact">Liên hệ</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Sáng Tạo <span style="color: var(--primary)">Trải Nghiệm</span> Kỹ Thuật Số</h1>
-            <p>Tôi là một Web Developer chuyên nghiệp, tập trung vào việc tạo ra các ứng dụng web hiện đại, hiệu năng
-                cao và có tính thẩm mỹ cao.</p>
-            <a href="#projects" class="btn btn-primary">Xem dự án của tôi</a>
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand logo" href="#">
+                &lt; <span class="brand-name">Thái Toàn</span> /&gt;
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item"><a class="nav-link" href="#skills">Kỹ năng</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Dự án</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certs">Chứng chỉ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Liên hệ</a></li>
+                </ul>
+            </div>
         </div>
-    </section>
+    </nav>
 
-    <section id="about">
-        <h2 class="section-title">Về <span>Tôi</span></h2>
-        <div class="glass" style="padding: 3rem; max-width: 900px; margin: 0 auto;">
-            <p style="font-size: 1.1rem; text-align: center;">
-                Với hơn 2 năm kinh nghiệm trong lĩnh vực phát triển web, tôi không chỉ viết code mà còn xây dựng những
-                giải pháp thực tế.
-                Tôi yêu thích việc học hỏi các công nghệ mới như Next.js, React và tối ưu hóa trải nghiệm người dùng qua
-                các hiệu ứng animations mượt mà.
-            </p>
-            <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap;">
-                <div style="text-align: center;"><i class="fab fa-react" style="font-size: 2rem; color: #61DBFB;"></i>
-                    <p>React</p>
+    <!-- Hero Section -->
+    <section class="hero-section py-5 mt-lg-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0 text-center text-lg-start">
+                    <h1 class="display-3 fw-bold mb-3">Hi all 👋 I'm Toàn</h1>
+                    <p class="lead text-muted mb-4">
+                        I'm an IT student in Web Development, having an experience of building Web applications
+                        with
+                        <span class="fw-bold text-dark">C#, React, Angular, PostgreSQL</span> and some other cool
+                        libraries and frameworks.
+                    </p>
+                    <div class="social-icons d-flex justify-content-center justify-content-lg-start gap-3 mb-4">
+                        <a href="https://github.com" class="social-icon github"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com" class="social-icon linkedin"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:email@example.com" class="social-icon gmail"><i class="fab fa-google"></i></a>
+                        <a href="https://facebook.com" class="social-icon facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <div class="cta-buttons d-flex justify-content-center justify-content-lg-start gap-3">
+                        <a href="#contact" class="btn btn-purple px-4 py-2">CONTACT ME</a>
+                        <a href="#" class="btn btn-purple-outline px-4 py-2">SEE MY RESUME</a>
+                    </div>
                 </div>
-                <div style="text-align: center;"><i class="fab fa-js" style="font-size: 2rem; color: #F7DF1E;"></i>
-                    <p>JavaScript</p>
-                </div>
-                <div style="text-align: center;"><i class="fab fa-node-js" style="font-size: 2rem; color: #68A063;"></i>
-                    <p>Node.js</p>
-                </div>
-                <div style="text-align: center;"><i class="fab fa-css3-alt"
-                        style="font-size: 2rem; color: #264de4;"></i>
-                    <p>CSS3</p>
+                <div class="col-lg-6 text-center">
+                    <img src="assets/developer.png" alt="Developer Illustration" class="img-fluid hero-img">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects">
-        <h2 class="section-title"><span>Dự án</span> Tiêu Biểu</h2>
-        <div class="projects-grid">
-            <!-- Project 1 -->
-            <a href="https://github.com/yourusername/library-system" target="_blank" class="glass project-card">
-                <div class="project-info">
-                    <div style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--primary); text-align: center;">
-                        <i class="fas fa-book-reader"></i>
-                    </div>
-                    <h3>Hệ Thống Quản Lý Thư Viện</h3>
-                    <p>Ứng dụng quản lý sách, độc giả và mượn trả với giao diện hiện đại và tính năng thống kê chi tiết.</p>
-                    <div style="margin-top: 1rem;">
-                        <span style="font-size: 0.8rem; background: var(--glass-border); padding: 4px 10px; border-radius: 10px; margin-right: 5px;">React</span>
-                        <span style="font-size: 0.8rem; background: var(--glass-border); padding: 4px 10px; border-radius: 10px;">Node.js</span>
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container text-center">
+            <h2 class="section-title mb-5">What I do?</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="skill-card p-4">
+                        <i class="fab fa-react fa-3x mb-3 text-info"></i>
+                        <h4>Frontend</h4>
+                        <p class="text-muted">Building responsive and interactive UIs using React and modern CSS
+                            frameworks.</p>
                     </div>
                 </div>
-            </a>
-            <!-- Project 2 -->
-            <a href="https://github.com/yourusername/ecommerce-dashboard" target="_blank" class="glass project-card">
-                <div class="project-info">
-                    <div style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--secondary); text-align: center;">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>E-Commerce Dashboard</h3>
-                    <p>Trang quản trị cho cửa hàng trực tuyến, tích hợp biểu đồ doanh thu và quản lý đơn hàng thời gian thực.</p>
-                    <div style="margin-top: 1rem;">
-                        <span style="font-size: 0.8rem; background: var(--glass-border); padding: 4px 10px; border-radius: 10px; margin-right: 5px;">Next.js</span>
-                        <span style="font-size: 0.8rem; background: var(--glass-border); padding: 4px 10px; border-radius: 10px;">Tailwind</span>
+                <div class="col-md-4">
+                    <div class="skill-card p-4">
+                        <i class="fab fa-node-js fa-3x mb-3 text-success"></i>
+                        <h4>Backend</h4>
+                        <p class="text-muted">Developing robust APIs and server-side logic using Node.js and Express.
+                        </p>
                     </div>
                 </div>
-            </a>
-            <!-- Project 3 -->
-            <a href="https://github.com/yourusername/social-media-app" target="_blank" class="glass project-card">
-                <div class="project-info">
-                    <div style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--primary); text-align: center;">
-                        <i class="fas fa-share-alt"></i>
-                    </div>
-                    <h3>Ứng Dụng Social Media</h3>
-                    <p>Nền tảng kết nối cộng đồng với các tính năng chia sẻ bài viết, bình luận và thông báo tức thời.</p>
-                    <div style="margin-top: 1rem;">
-                        <span style="font-size: 0.8rem; background: var(--glass-border); padding: 4px 10px; border-radius: 10px; margin-right: 5px;">Firebase</span>
-                        <span style="font-size: 0.8rem; background: var(--glass-border); padding: 4px 10px; border-radius: 10px;">React Native</span>
-                    </div>
-                </div>
-            </a>
+            </div>
         </div>
     </section>
 
-    <section id="certs">
-        <h2 class="section-title">Chứng Chỉ & <span>Thành Tựu</span></h2>
-        <div class="cert-grid">
-            <a href="https://coursera.org/verify/..." target="_blank" class="glass cert-card">
-                <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--primary);">
-                    <i class="fas fa-certificate"></i>
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Projects</h2>
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm project-card">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Library Management</h5>
+                            <p class="card-text text-muted small">A full-stack system for managing books and readers
+                                with statistics.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-purple-light text-purple me-1">React</span>
+                                <span class="badge bg-purple-light text-purple">Node.js</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3 text-end">
+                            <a href="#" class="text-decoration-none text-purple small fw-bold">View Code <i
+                                    class="fas fa-code"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <h4>Full Stack Web Development</h4>
-                <p style="color: var(--text-dim); font-size: 0.9rem;">Coursera - 2023</p>
-                <p style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--primary);">Xem chứng chỉ <i class="fas fa-external-link-alt"></i></p>
-            </a>
-            <a href="https://google.com/grow/..." target="_blank" class="glass cert-card">
-                <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--secondary);">
-                    <i class="fas fa-graduation-cap"></i>
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm project-card">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">E-commerce API</h5>
+                            <p class="card-text text-muted small">Robust backend API for online stores with payment
+                                integration.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-purple-light text-purple me-1">Express</span>
+                                <span class="badge bg-purple-light text-purple">MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3 text-end">
+                            <a href="#" class="text-decoration-none text-purple small fw-bold">View Code <i
+                                    class="fas fa-code"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <h4>Advanced React Patterns</h4>
-                <p style="color: var(--text-dim); font-size: 0.9rem;">Google / Udemy - 2024</p>
-                <p style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--secondary);">Xem chứng chỉ <i class="fas fa-external-link-alt"></i></p>
-            </a>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2 class="section-title">Kết Nối Với <span>Tôi</span></h2>
-        <div class="contact-container">
-            <a href="https://facebook.com" class="glass social-link" title="Facebook"><i
-                    class="fab fa-facebook-f"></i></a>
-            <a href="https://github.com" class="glass social-link" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com" class="glass social-link" title="LinkedIn"><i
-                    class="fab fa-linkedin-in"></i></a>
-            <a href="mailto:email@example.com" class="glass social-link" title="Email"><i
-                    class="fas fa-envelope"></i></a>
-            <a href="tel:+84123456789" class="glass social-link" title="Phone"><i class="fas fa-phone"></i></a>
+    <!-- Achievements Section -->
+    <section id="certs" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Achievements</h2>
+            <div class="row g-4">
+                <div class="col-md-6 mx-auto">
+                    <a href="#" class="glass-card text-decoration-none d-flex align-items-center p-4">
+                        <div class="icon-box me-4">
+                            <i class="fas fa-certificate fa-2x text-warning"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1 text-dark fw-bold">Full Stack Web Development</h5>
+                            <p class="mb-0 text-muted small">Coursera - 2023</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
-        <p style="text-align: center; margin-top: 3rem; color: var(--text-dim);">
-            Sẵn sàng cho các cơ hội hợp tác mới! Hãy liên hệ với tôi qua bất kỳ kênh nào ở trên.
-        </p>
     </section>
 
-    <footer>
-        <p>&copy; 2026 Portfolio. Thiết kế bởi Thái Toàn.</p>
+    <!-- Footer -->
+    <footer id="contact" class="py-5 text-center bg-white border-top">
+        <div class="container">
+            <p class="mb-2">Made with ❤️ by Thái Toàn</p>
+            <div class="social-icons d-flex justify-content-center gap-3">
+                <a href="#" class="text-muted"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-muted"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-muted"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
     </footer>
 
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 
